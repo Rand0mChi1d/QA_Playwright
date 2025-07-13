@@ -1,0 +1,1 @@
+go to playwright.config.ts, use: video / screenshot, change "off" to "on" or, better, "retain-on-failure" / "only-on-failure"

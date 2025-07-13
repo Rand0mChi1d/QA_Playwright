@@ -1,0 +1,11 @@
+changing testing to visible(feasible???) mode and swapping default browser for testing in cycles
+
+npx playwright test --headed      (browser will visibly open when proceduring)
+npx playwright test --browser=firefox     (for example)
+
+if the browser input is not recognized:
+Error: Unsupported browser "chrome", must be one of "all", "chromium", "firefox" or "webkit"
+--browser=all tests in all awailable browsers
+
+We can specify a relative path so that only the chosen test is ran
+npx playwright test tests/example.spec.ts   

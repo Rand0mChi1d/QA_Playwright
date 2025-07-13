@@ -1,0 +1,16 @@
+Add a reporter flock to command script.
+
+
+npx playwright test --config=playwright.config.ts --project=Webkit --reporter=...
+
+--reporter=line
+    //the report about test is shortened to one-liner pass or fail.
+--reporter=list
+    //default, shows default report
+--reporter=dot
+    //outputs green or red dot for success of fail accordingly
+
+--reporter=junit
+    //outputs log in XML format, convenient to copy/paste for logging and monitoring
+--reporter=html
+    //creates an index.html report, which you can open in the browser

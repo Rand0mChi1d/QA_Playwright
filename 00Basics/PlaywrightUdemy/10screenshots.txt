@@ -1,0 +1,5 @@
+You can look at the page you're testing by taking a screenshot
+
+await page.screenshot({ path:"screenshot.png", fullPage: true })
+
+fullPage:false will 

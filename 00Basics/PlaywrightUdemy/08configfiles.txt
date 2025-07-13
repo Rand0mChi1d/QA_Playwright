@@ -1,0 +1,11 @@
+PW allows to create configuration files for specific tests
+in the root folder of the project, create a playwright.config.ts file
+
+projects are arrays
+typically you want to have a separate project for each browser
+
+
+to run a test with the configuration we created:
+
+npx playwright test config=playwright.config.ts project=Webkit
+

@@ -1,0 +1,23 @@
+what 5 selectors there are:
+
+test('Selectors', async({ page }) => {
+    //text
+    await page.click("text= some text")
+
+    //Css selectors
+    await page.click('button')
+    await page.click('.class')
+    await page.click('#id')
+        //if we don't have unique class or id, we can use selector with specification:
+        await page.click('input[name=...]')      //name can be any parameter stated in the inspection of the element    
+
+    //target only visible Css selector
+    await page.click('.submit-button:visible')
+
+    //combinations
+    await page.click('#username .first')   //first thing with those id and class will get clicked
+
+    //Xpath
+    await page.click("//button")
+
+})

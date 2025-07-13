@@ -1,0 +1,18 @@
+https://playwright.dev/docs/test-assertions      - list of all possible playwright assertions and their properties
+
+const var_name= await page.locator("#id)
+
+expect(constant).toContainText("text")    - asserts if such text is in the constant, maybe within other text
+expect(constant).toHaveText("text")    - asserts whether text in constant is equivalent to what we want it to be
+
+
+//important trick, forego the creation of the varuable to check visibility  
+await page.waitForSelector("#id")
+//if it's not visible, test fails
+
+
+//we can count a number of certain elements on the page
+const numberOfLinks= await page.locator("li > a")
+//it will locate elements within "li" marked "a"
+await expect(numberOfLinks).toHaveCount(2)
+

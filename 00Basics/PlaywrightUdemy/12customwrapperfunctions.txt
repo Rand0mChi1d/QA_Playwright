@@ -1,0 +1,5 @@
+We can create functions to export freely
+You need to pass page class object into the function, export it as an async file and always import it
+into the test file we want to use it in
+
+At the root of the project we create a helper file .ts  (helper.ts in this case)

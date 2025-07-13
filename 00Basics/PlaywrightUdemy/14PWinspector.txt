@@ -1,0 +1,5 @@
+Playwright has inspector - tool that can pause the execution of the test to debug or analyse, to then proceed with testing
+
+use:
+await page.pause()
+where you need a pause to observe and reflect

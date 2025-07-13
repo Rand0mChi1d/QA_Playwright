@@ -1,0 +1,9 @@
+You can run multiple tests in a suit in parallel. For it, mark it with parallel before running
+
+test.describe.parallel("test1", () => {
+    test
+
+    test
+
+    test
+})

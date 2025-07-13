@@ -1,0 +1,12 @@
+course link: https://www.udemy.com/course/automated-software-testing-with-playwright/?couponCode=PLOYALTY0923
+
+
+sudo apt install npm
+
+npm init
+(npm - node package manager)
+
+
+(npm help init)
+
+the biggest repository of dependancies and libraries

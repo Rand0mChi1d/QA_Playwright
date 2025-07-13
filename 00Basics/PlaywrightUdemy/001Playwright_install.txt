@@ -1,0 +1,10 @@
+Tool for api testing by microsoft.  
+
+npm install @playwright/test
+playwright test package (cut version for automated testing only)
+without test it'll be a full version
+( npm install @playwright  )
+
+npx playwright install   - installs all browsers for playwright testing 
+
+(npx - node package eXecute)

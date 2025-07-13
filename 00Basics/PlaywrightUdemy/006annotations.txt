@@ -1,0 +1,15 @@
+Playwright allows users to group tests into suits, use custom tags to run tagged tests in batches or skip/target specific tests.
+1. skip
+    test.skip("ignored", async ({page}) =>{
+    skipped test
+    })
+
+2. only
+    test.only(...)
+only tests marked like this will execute, others are ignored
+
+3. describe
+    //describe is not an asynchronous function, so no need for async
+    test.describe("description", () => {
+        tests come in here
+    })

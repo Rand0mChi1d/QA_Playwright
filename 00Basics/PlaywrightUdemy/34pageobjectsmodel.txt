@@ -1,0 +1,1 @@
+POM - a design pattern that creates an object repository for all web elements.

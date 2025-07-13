@@ -1,0 +1,16 @@
+In all frameworks, you're able to run some code before and after the test
+
+test.describe.only("Hooks", () => {
+    test.beforeEach(async ({ page } => {
+        await page.goto("https://example.com/")
+    })
+    //will run this before every test in the group
+
+
+    test.beforeAll(async ({ page }) => {
+        ...
+    })
+    //will run this once, before tests
+
+    test.afterAll(...)
+    test.afterEach(...)

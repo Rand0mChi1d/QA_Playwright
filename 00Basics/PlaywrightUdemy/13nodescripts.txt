@@ -1,0 +1,10 @@
+We can add scripts to package.json file to avoid excessive typing into terminal
+there we create  a construct like
+"tests:chrome": "npx playwright test --config=playwright.config.ts --project=Chromium",
+"tests:webkit": "npx playwright test --config=playwright.config.ts --project=Webkit"...
+
+now, via command: npm run tests:chrome  
+we run that line easily from the scripts
+
+to tweak parameters like we used to (--headed, --reporter=...), in console, after the npm command put "--" and overwrite configuration:
+npm run tests:chrome -- --headed --reporter=dot

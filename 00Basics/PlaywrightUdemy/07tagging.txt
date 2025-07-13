@@ -1,0 +1,20 @@
+Playwright allows putting tags in place and run all tests with specific tags
+
+test("description @nameOfTheTag", async {(page)} => {
+
+})
+
+
+in console: npx playwright test --grep @nameOfTheTag
+to run all tagged tests
+
+in console: npx playwright test --grep-invert @nameOfTheTag
+to run all tests that don't have this tag
+
+
+
+You can also put tags onto test suit and add multiple tags to one test:
+
+test("description @tag1 @tag2 tag3", async {(page)} => {
+
+})
