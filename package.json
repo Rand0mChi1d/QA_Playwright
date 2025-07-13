@@ -1,0 +1,21 @@
+{
+  "name": "qa-work",
+  "version": "1.0.0",
+  "description": "Automated software testing with Playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "npx playwright test 00Basics --config=playwright.config.ts --project=Chromium",
+    "tests:webkit": "npx playwright test 00Basics --config=playwright.config.ts --project=Webkit",
+    "tests:firefox": "npx playwright test 00Basics --config=playwright.config.ts --project=Firefox",
+    "part2 scripts": "End 2 End tests, part 2 of the course",
+    "tests:e2eChr": "npx playwright test 01EndToEndTestingPrjcts/tests/e2e --config=e2e.config.ts --project=Chromium",
+    "tests:e2eWeb": "npx playwright test 01EndToEndTestingPrjcts/tests/e2e --config=e2e.config.ts --project=Webkit",
+    "tests:e2eFox": "npx playwright test 01EndToEndTestingPrjcts/tests/e2e --config=e2e.config.ts --project=Firefox"
+  },
+  "author": "Random",
+  "license": "ISC",
+  "dependencies": {
+    "@playwright/test": "^1.53.2",
+    "prettier": "^3.6.2"
+  }
+}

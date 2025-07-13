@@ -1,0 +1,9 @@
+in playwright it's a common practice to have a different config file for different suit of tests, such as
+end to end, regression or smoke screen tests
+in the e2e.config.ts file, we add a line:
+//  retries: 0,    
+    testDir: "tests/e2e",    - this line is responsible for singling out test folder for the npx playwright launch
+//  use: {
+
+then, we alter node script in package.json
+

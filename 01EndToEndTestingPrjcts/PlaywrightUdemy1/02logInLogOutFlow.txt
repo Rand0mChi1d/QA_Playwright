@@ -1,0 +1,3 @@
+trick for logging out:
+await page.goto("homepage_url/logout.html")
+await expect(page).toHaveURL("homepage_url/index.html")
