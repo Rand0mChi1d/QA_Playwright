@@ -1,8 +1,9 @@
-import { test, expect} from "@playwright/test"
+import { test } from "@playwright/test"
 
 import { LoginPage } from "../../../page-objects/LoginPage"
 
 import {MethodPage} from "../../../page-objects/MethodPage"
+
 
 test.describe.parallel("Login / Logout flow.", () => {
     let loginPage: LoginPage

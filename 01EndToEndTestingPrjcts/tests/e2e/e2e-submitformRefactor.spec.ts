@@ -1,4 +1,4 @@
-import {test, expect} from '@playwright/test'
+import {test} from '@playwright/test'
 import { SubmitRefMethod } from '../../../page-objects/SubmitRefMethod'
 
 test.describe.parallel.only("Feedback form", () => {
